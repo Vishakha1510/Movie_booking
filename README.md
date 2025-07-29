@@ -26,30 +26,6 @@ users 👥
 ![Home Screen](screenshots/5.png)
 
 
-bash
-git clone https://github.com/Vishakha1510/Movie_booking.git
-Import SQL file
 
-bash
-mysql -u username -p db_name < database.sql
-Configure API
-Edit config.php with your database credentials.
 
-Test Endpoints
-Use Postman or Thunder Client with the provided Postman Collection.
-
-🌐 Live Demo
-Access the API at:
-🔗 https://movieapi.example.com (if deployed)
-
-📜 License
-This project is licensed under the MIT License.
-
-📎 Appendix
-Postman Documentation (optional link)
-
-ER Diagram
-
-🎉 Lights, Camera, API Action!
-"The best seat in the house is just an API call away!"
 
