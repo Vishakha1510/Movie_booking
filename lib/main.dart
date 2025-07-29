@@ -1,12 +1,9 @@
-import 'package:flutter/material.dart';
 import 'package:movie_php/screens/bookings_screen.dart';
 import 'package:movie_php/screens/movies_screen.dart';
 import 'package:movie_php/screens/seats_screen.dart';
 import 'package:movie_php/screens/shows_screen.dart';
 import 'package:movie_php/screens/theater_screen.dart';
 import 'package:movie_php/screens/users_screen.dart';
-
-
 
 void main() {
   runApp(MovieBookingApp());
@@ -18,10 +15,7 @@ class MovieBookingApp extends StatelessWidget {
     return MaterialApp(
       title: 'Movie Booking System',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        useMaterial3: true,
-        colorSchemeSeed: Colors.red,
-      ),
+      theme: ThemeData(useMaterial3: true, colorSchemeSeed: Colors.red),
       home: MainMenu(),
     );
   }
@@ -51,10 +45,11 @@ class MainMenu extends StatelessWidget {
               leading: Icon(item.icon, color: Colors.red),
               title: Text(item.title),
               trailing: Icon(Icons.arrow_forward_ios),
-              onTap: () => Navigator.push(
-                context,
-                MaterialPageRoute(builder: (_) => item.page),
-              ),
+              onTap:
+                  () => Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (_) => item.page),
+                  ),
             ),
           );
         },
